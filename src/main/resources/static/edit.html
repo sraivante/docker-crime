@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Dossier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="edit">
+<main class="container">
+    <header class="hero">
+        <h1>Edit Dossier</h1>
+        <p>Update an existing person dossier by ID.</p>
+    </header>
+
+    <nav class="tabs">
+        <a class="tab" href="index.html">List Dossiers</a>
+        <a class="tab" href="add.html">Add New</a>
+    </nav>
+
+    <section class="card">
+        <h2>Edit Details</h2>
+        <div class="row">
+            <label for="dossierId">Dossier ID</label>
+            <input id="dossierId" type="number" min="1" readonly>
+            <button id="reloadEditBtn" type="button">Reload</button>
+        </div>
+        <form id="personForm">
+            <div class="grid two">
+                <label>Full Name<input name="fullName" type="text"></label>
+                <label>Father Name<input name="fatherName" type="text"></label>
+                <label>Current Address<input name="currentAddress" type="text"></label>
+                <label>Permanent Address<input name="permanentAddress" type="text"></label>
+                <label>Date of Birth<input name="dateOfBirth" type="date"></label>
+                <label>Religion<input name="religion" type="text"></label>
+                <label>Caste<input name="caste" type="text"></label>
+                <label>Education<input name="education" type="text"></label>
+                <label>Identification Mark<input name="uniqueIdentificationMark" type="text"></label>
+                <label>Phone New<input name="phoneNew" type="text"></label>
+                <label>Phone Old<input name="phoneOld" type="text"></label>
+                <label>Aadhaar Number<input name="aadhaarNumber" type="text"></label>
+                <label>PAN Number<input name="panNumber" type="text"></label>
+                <label>Passport Number<input name="passportNumber" type="text"></label>
+                <label>Credit Card Details<input name="creditCardDetails" type="text"></label>
+                <label>Bank Details<input name="bankDetails" type="text"></label>
+                <label>Driving License<input name="drivingLicense" type="text"></label>
+                <label>Voter ID<input name="voterId" type="text"></label>
+                <label>Other Identity Details<input name="otherIdentityDetails" type="text"></label>
+                <label>Email<input name="email" type="email"></label>
+                <label>Photo URL<input name="photoUrl" type="text"></label>
+            </div>
+            <div class="row">
+                <button id="updatePersonBtn" type="submit">Update Dossier</button>
+            </div>
+        </form>
+    </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
