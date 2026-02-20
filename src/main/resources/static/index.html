@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossier List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="list">
+<main class="container">
+    <header class="hero">
+        <h1>Dossier Management</h1>
+        <p>List, edit, add, and delete dossiers from Spring Boot APIs.</p>
+    </header>
+
+    <nav class="tabs">
+        <a class="tab active" href="index.html">List Dossiers</a>
+        <a class="tab" href="add.html">Add New</a>
+    </nav>
+
+    <section class="card">
+        <div class="row">
+            <h2>Existing Dossiers</h2>
+            <button id="refreshBtn" type="button">Refresh List</button>
+        </div>
+        <div class="tableWrap">
+            <table>
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Father Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody id="dossierTableBody">
+                <tr>
+                    <td colspan="7">Loading...</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pagination">
+            <button id="prevPageBtn" type="button">Previous</button>
+            <span id="pageInfo">Page 1</span>
+            <button id="nextPageBtn" type="button">Next</button>
+        </div>
+    </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
