@@ -1,0 +1,36 @@
+INSERT INTO person_dossier
+(id, full_name, father_name, current_address, permanent_address, date_of_birth, religion, caste, education, unique_identification_mark, phone_new, phone_old, aadhaar_number, pan_number, passport_number, credit_card_details, bank_details, driving_license, voter_id, other_identity_details, email, photo_url, created_at, updated_at)
+VALUES
+(1001, 'Seed Person 1', 'Seed Father 1', 'Sector 1, City', 'Village 1, District', '1991-01-02', 'NA', 'NA', 'Graduate', 'Mark-1001', '9000001001', '8000001001', '123412341001', 'ABCDE1001F', 'P0001001', 'card-1001', 'bank-1001', 'DL-001001', 'VOTER1001', 'Other-1001', 'seed1@example.com', 'https://example.com/photo/1001', NOW(), NOW()),
+(1002, 'Seed Person 2', 'Seed Father 2', 'Sector 2, City', 'Village 2, District', '1992-02-03', 'NA', 'NA', 'Graduate', 'Mark-1002', '9000001002', '8000001002', '123412341002', 'ABCDE1002F', 'P0001002', 'card-1002', 'bank-1002', 'DL-001002', 'VOTER1002', 'Other-1002', 'seed2@example.com', 'https://example.com/photo/1002', NOW(), NOW()),
+(1003, 'Seed Person 3', 'Seed Father 3', 'Sector 3, City', 'Village 3, District', '1993-03-04', 'NA', 'NA', 'Graduate', 'Mark-1003', '9000001003', '8000001003', '123412341003', 'ABCDE1003F', 'P0001003', 'card-1003', 'bank-1003', 'DL-001003', 'VOTER1003', 'Other-1003', 'seed3@example.com', 'https://example.com/photo/1003', NOW(), NOW()),
+(1004, 'Seed Person 4', 'Seed Father 4', 'Sector 4, City', 'Village 4, District', '1994-04-05', 'NA', 'NA', 'Graduate', 'Mark-1004', '9000001004', '8000001004', '123412341004', 'ABCDE1004F', 'P0001004', 'card-1004', 'bank-1004', 'DL-001004', 'VOTER1004', 'Other-1004', 'seed4@example.com', 'https://example.com/photo/1004', NOW(), NOW()),
+(1005, 'Seed Person 5', 'Seed Father 5', 'Sector 5, City', 'Village 5, District', '1995-05-06', 'NA', 'NA', 'Graduate', 'Mark-1005', '9000001005', '8000001005', '123412341005', 'ABCDE1005F', 'P0001005', 'card-1005', 'bank-1005', 'DL-001005', 'VOTER1005', 'Other-1005', 'seed5@example.com', 'https://example.com/photo/1005', NOW(), NOW()),
+(1006, 'Seed Person 6', 'Seed Father 6', 'Sector 6, City', 'Village 6, District', '1996-06-07', 'NA', 'NA', 'Graduate', 'Mark-1006', '9000001006', '8000001006', '123412341006', 'ABCDE1006F', 'P0001006', 'card-1006', 'bank-1006', 'DL-001006', 'VOTER1006', 'Other-1006', 'seed6@example.com', 'https://example.com/photo/1006', NOW(), NOW()),
+(1007, 'Seed Person 7', 'Seed Father 7', 'Sector 7, City', 'Village 7, District', '1997-07-08', 'NA', 'NA', 'Graduate', 'Mark-1007', '9000001007', '8000001007', '123412341007', 'ABCDE1007F', 'P0001007', 'card-1007', 'bank-1007', 'DL-001007', 'VOTER1007', 'Other-1007', 'seed7@example.com', 'https://example.com/photo/1007', NOW(), NOW()),
+(1008, 'Seed Person 8', 'Seed Father 8', 'Sector 8, City', 'Village 8, District', '1998-08-09', 'NA', 'NA', 'Graduate', 'Mark-1008', '9000001008', '8000001008', '123412341008', 'ABCDE1008F', 'P0001008', 'card-1008', 'bank-1008', 'DL-001008', 'VOTER1008', 'Other-1008', 'seed8@example.com', 'https://example.com/photo/1008', NOW(), NOW()),
+(1009, 'Seed Person 9', 'Seed Father 9', 'Sector 9, City', 'Village 9, District', '1999-09-10', 'NA', 'NA', 'Graduate', 'Mark-1009', '9000001009', '8000001009', '123412341009', 'ABCDE1009F', 'P0001009', 'card-1009', 'bank-1009', 'DL-001009', 'VOTER1009', 'Other-1009', 'seed9@example.com', 'https://example.com/photo/1009', NOW(), NOW()),
+(1010, 'Seed Person 10', 'Seed Father 10', 'Sector 10, City', 'Village 10, District', '2000-10-11', 'NA', 'NA', 'Graduate', 'Mark-1010', '9000001010', '8000001010', '123412341010', 'ABCDE1010F', 'P0001010', 'card-1010', 'bank-1010', 'DL-001010', 'VOTER1010', 'Other-1010', 'seed10@example.com', 'https://example.com/photo/1010', NOW(), NOW())
+ON DUPLICATE KEY UPDATE
+full_name = VALUES(full_name),
+father_name = VALUES(father_name),
+current_address = VALUES(current_address),
+permanent_address = VALUES(permanent_address),
+date_of_birth = VALUES(date_of_birth),
+religion = VALUES(religion),
+caste = VALUES(caste),
+education = VALUES(education),
+unique_identification_mark = VALUES(unique_identification_mark),
+phone_new = VALUES(phone_new),
+phone_old = VALUES(phone_old),
+aadhaar_number = VALUES(aadhaar_number),
+pan_number = VALUES(pan_number),
+passport_number = VALUES(passport_number),
+credit_card_details = VALUES(credit_card_details),
+bank_details = VALUES(bank_details),
+driving_license = VALUES(driving_license),
+voter_id = VALUES(voter_id),
+other_identity_details = VALUES(other_identity_details),
+email = VALUES(email),
+photo_url = VALUES(photo_url),
+updated_at = NOW();

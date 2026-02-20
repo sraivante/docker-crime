@@ -1,0 +1,7 @@
+.git
+.idea
+target
+dossier/target
+dossier/.idea
+zip.zip
+*.log
